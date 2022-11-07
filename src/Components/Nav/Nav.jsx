@@ -16,7 +16,7 @@ const Nav = () => {
             <div className="nav-right">
                 <a target="_blank"
                    className="nav-link"
-                   href="https://github.com/Favour-Cell"
+                   href="https://github.com/TheTechGoddess"
                    rel="noreferrer">
                     {user}
                 </a>

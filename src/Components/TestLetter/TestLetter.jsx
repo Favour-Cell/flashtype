@@ -2,14 +2,11 @@ import React from 'react';
 import './TestLetter.css'
 
 const TestLetter = ({individualLetterInfo}) => {
-    const {status} = individualLetterInfo;
-
-
-    const statusClass = {
+    const statusClassName = {
         correct: "test-letter-correct",
         incorrect: "test-letter-incorrect",
         notAttempted: "test-letter-not-attempted"
-    }[status]
+    }[individualLetterInfo.status]
     //*************************************** */
     //This is another way to change the colours..
     // let statusClass;
@@ -23,7 +20,7 @@ const TestLetter = ({individualLetterInfo}) => {
     //****************************************** */
 
     return ( 
-        <span className={`test-letter ${statusClass}`}>{individualLetterInfo.testLetter}</span>
+        <span className={`test-letter ${statusClassName}`}>{individualLetterInfo.testLetter}</span>
      );
 }
  

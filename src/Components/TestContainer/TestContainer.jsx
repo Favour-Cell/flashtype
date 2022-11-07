@@ -17,6 +17,7 @@ const TestContainer = ({
 
     return ( 
         <div className="test-container">
+            {/* try again */}
             {
                 timeRemaining > 0 ? (
                     <div 
@@ -37,8 +38,7 @@ const TestContainer = ({
                     <div className="try-again-cont">
                         <TryAgain words={words} characters={characters} wpm={wpm} startAgain={startAgain}/>
                     </div> 
-                )
-            }
+                )}
            
             
         </div>
